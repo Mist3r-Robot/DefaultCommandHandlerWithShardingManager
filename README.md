@@ -15,5 +15,24 @@ npm install
 
 ---
 
+## Understand projects folders
+
+```bash
+.
+├── app.js (Sharding manager - Launch your script by here)
+├── commands (Folder with all commands, you can triage by following any category)
+│   ├── Miscellaneous
+│   │   └── avatar.js
+│   └── System
+│       └── uptime.js
+├── config.example.json (A example of the configuration of this bot)
+├── core.js (Command handler)
+├── events
+│   ├── guildMemberAdd.js (When a member join the server)
+│   ├── guildMemberRemove.js (When a member leave the server)
+│   ├── message.js (Check messages like commands and other stuffs)
+│   └── ready.js 
+```
+
 ### License
 This project is licensed under the GNU GENERAL PUBLIC v3 LICENSE - see the [LICENSE](LICENSE) file for details.
